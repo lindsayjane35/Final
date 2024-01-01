@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiking</title>
+    <style>
+      body {
+        background: linear-gradient(
+          180deg,
+          rgb(100, 218, 247) 30%,
+          rgb(240, 233, 160) 50%,
+          rgb(27, 84, 14) 60%
+        );
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 500px;
+        background: rgb(250, 255, 196, 0.6);
+        border-radius: 25px;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        font-family: garamond;
+        font-size: 50px;
+        margin: 5px;
+        color: rgb(41, 39, 51);
+      }
+      h2 {
+        text-align: center;
+        font-family: helvetica;
+        color: rgb(41, 39, 51);
+      }
+      img {
+        max-width: 100%;
+      }
+      .yellow-flowers {
+        border-radius: 10px;
+        filter: grayscale(100%);
+        transition: all 300ms ease-in-out;
+      }
+      .yellow-flowers:hover {
+        filter: brightness(130%) contrast(150%) grayscale(0%) sepia(0%);
+        transform: rotate(360deg);
+      }
+
+      .grid {
+        display: grid;
+        margin: 10px 0;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 5px;
+        filter: sepia(60%);
+        transition: all 150ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(2);
+        filter: sepia(10%);
+        z-index: 1;
+      }
+      p {
+        font-family: Helvetica;
+        color: rgb(41, 39, 51);
+        line-height: 1.5;
+      }
+      a {
+        text-align: center;
+        color: rgb(204, 243, 188);
+
+        font-family: helvetica;
+        font-weight: 700;
+      }
+      .nps-link {
+        color: rgb(41, 39, 51);
+        text-decoration: none;
+        font-size: 20px;
+      }
+      .hiking-button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        background: rgb(41, 39, 51);
+        border: solid #554f5a;
+        color: rgb(204, 243, 188);
+        padding: 15px;
+        font-size: 20px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      }
+      .hiking-button:hover {
+        cursor: pointer;
+        background: white;
+        color: rgb(41, 39, 51);
+        border-color: rgb(41, 39, 51);
+      }
+
+      footer {
+        text-align: center;
+        margin: 20px;
+        font-family: helvetica;
+        color: rgb(204, 243, 188);
+      }
+      .dark {
+        background: radial-gradient(
+          circle at 24.1% 68.8%,
+          rgb(50, 50, 50) 0%,
+          rgb(0, 0, 0) 99.4%
+        );
+        color: rgb(204, 243, 188);
+      }
+      .dark h1 {
+        color: rgb(204, 243, 188);
+      }
+      .dark h2 {
+        color: rgb(204, 243, 188);
+      }
+      .dark p {
+        color: rgb(204, 243, 188);
+      }
+      .dark .container {
+        background: rgb(204, 243, 188, 0.2);
+        color: rgb(204, 243, 188);
+      }
+      .dark a {
+        color: rgb(204, 243, 188);
+      }
+      .theme-button {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        background: black;
+        color: white;
+        size: 25px;
+        padding: 8px;
+        border-radius: 10px;
+      }
+      .theme-button:hover {
+        cursor: pointer;
+        background: white;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>Hiking</h1>
+      <h2><em>The Great Outdoors</em></h2>
+      <a
+        href="https://www.nps.gov/subjects/trails/hiking-in-parks.htm"
+        target="blank"
+      >
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/772/original/Yellow_Flowers.jpg?1698982621
+"
+          alt="yellow flowers"
+          class="yellow-flowers"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/911/original/20190323_122441.jpg?1699064818"
+          alt="Agoura1"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/907/original/Monte_-_Hike.jpg?1699064505"
+          alt="Monte"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/910/original/20190224_112823.jpg?1699064760"
+          alt="Agoura2"
+        />
+      </div>
+      <p>
+        The warm sunshine on your face, the sound of the wind rushing through
+        the trees overhead, and the soft earthy feel of the trail under your
+        boots. Not only are these experiences enjoyable to have, but they're
+        good for you, too. Hiking is proven to have many health benefits,
+        ranging from physical exercise you get when out on the trail, to
+        emotional or mental relief that comes from being in nature.
+      </p>
+      <a
+        class="nps-link"
+        href="https://www.nps.gov/subjects/trails/hiking-in-parks.htm"
+        target="blank"
+        >👟👟 National Park Service - Hiking Resources</a
+      ><br />
+      <button class="hiking-button"><strong>Hiking Trails</strong></button>
+    </div>
+    <footer>
+      Coded with 💖 by
+      <a href="https://www.shecodes.io/graduates/101922-lindsay-land"
+        >Lindsay Land</a
+      >
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+      }
+      function hikingTrails() {
+        let name = prompt("What is your first name?");
+        let location = prompt("Where do you live?");
+        alert(
+          "Hello " + name + ", let's find some trails around " + location + "!"
+        );
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+      let hikingButton = document.querySelector(".hiking-button");
+      hikingButton.addEventListener("click", hikingTrails);
+    </script>
+  </body>
+</html>
